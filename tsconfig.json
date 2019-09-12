@@ -1,0 +1,21 @@
+{
+    "include": ["./src/**/*", "./wrap-with-provider.tsx"],
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "lib": ["dom", "es2017"],
+        "jsx": "react",
+        "strict": true,
+        "allowJs": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@style/*": ["src/style/*"],
+            "@components/*": ["src/components/*"]
+        }
+    }
+}

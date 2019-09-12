@@ -1,0 +1,72 @@
+{
+  "name": "is-the-new-apple-watch-out",
+  "private": true,
+  "description": "Is it?",
+  "version": "0.1.0",
+  "author": "Byron Mejia <hello@byronis.me>",
+  "dependencies": {
+    "gatsby": "^2.1.19",
+    "gatsby-image": "^2.0.30",
+    "gatsby-plugin-catch-links": "^2.0.13",
+    "gatsby-plugin-google-analytics": "^2.0.18",
+    "gatsby-plugin-manifest": "^2.0.20",
+    "gatsby-plugin-offline": "^2.0.24",
+    "gatsby-plugin-react-helmet": "^3.0.7",
+    "gatsby-plugin-sharp": "^2.0.23",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-plugin-typescript": "^2.0.11",
+    "gatsby-source-filesystem": "^2.0.23",
+    "gatsby-transformer-remark": "^2.3.8",
+    "gatsby-transformer-sharp": "^2.1.15",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-helmet": "^5.2.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "rxjs": "^6.5.1",
+    "sharp": "^0.22.0",
+    "styled-components": "^4.2.0",
+    "styled-reset": "^4.0.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.1.11",
+    "@storybook/addon-backgrounds": "^5.1.11",
+    "@storybook/addon-info": "^5.1.11",
+    "@storybook/addon-knobs": "^5.1.11",
+    "@storybook/addon-links": "^5.1.11",
+    "@storybook/addon-storyshots": "^5.1.11",
+    "@storybook/addons": "^5.1.11",
+    "@storybook/react": "^5.1.11",
+    "@types/react": "^16.8.10",
+    "@types/react-dom": "^16.8.3",
+    "@types/react-helmet": "^5.0.8",
+    "@types/react-redux": "^7.1.2",
+    "@types/styled-components": "^4.1.12",
+    "babel-plugin-styled-components": "^1.10.0",
+    "git-hooks": "^1.1.10",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.16.4",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "^3.3.4000"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/byronmejia/isthenewapplewatchout.com"
+  },
+  "bugs": {
+    "url": "https://github.com/byronmejia/isthenewapplewatchout.com/issues"
+  }
+}
