@@ -7,17 +7,35 @@ import { THEME_UPDATE } from "../state/theme/actions";
 import Select from "react-select";
 import { styled } from "@style/styled";
 
-const options = [
+type ThemeOption = {
+    value: ThemeStore["theme"];
+    label: string;
+};
+const options: Array<ThemeOption> = [
+    { value: "system", label: "System Theme" },
     { value: "light", label: "Light Theme" },
     { value: "dark", label: "Dark Theme" },
 ];
+
+export const extractOptionFromTheme = (
+    theme: ThemeStore["theme"],
+): ThemeOption => {
+    switch (theme) {
+        case "system":
+            return options[0];
+        case "light":
+            return options[1];
+        case "dark":
+            return options[2];
+    }
+};
 
 export const StyledThemeSelector = styled(Select)`
     &.theme-selector {
         position: absolute;
         top: 0.5em;
         left: 0.5em;
-        width: 10em;
+        width: 15em;
         color: ${props => props.theme.primaryColor};
         background-color: ${props => props.theme.primaryBackground};
         border-color: ${props => props.theme.primaryColor};
@@ -50,8 +68,8 @@ export const ThemeSelector: FunctionComponent = () => {
     const currentTheme = useSelector<StateModel, ThemeStore["theme"]>(
         state => state.theme.theme,
     );
-    const currentThemeOption =
-        currentTheme === "light" ? options[0] : options[1];
+    const currentThemeOption = extractOptionFromTheme(currentTheme);
+
     const dispatch = useDispatch();
     return (
         <StyledThemeSelector
