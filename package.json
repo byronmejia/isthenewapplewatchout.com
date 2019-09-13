@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Byron Mejia <hello@byronis.me>",
   "dependencies": {
+    "@lingui/react": "^2.8.3",
     "gatsby": "^2.1.19",
     "gatsby-image": "^2.0.30",
     "gatsby-plugin-catch-links": "^2.0.13",
@@ -31,6 +32,9 @@
     "styled-reset": "^4.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@lingui/cli": "^2.8.3",
+    "@lingui/macro": "^2.8.3",
     "@storybook/addon-actions": "^5.1.11",
     "@storybook/addon-backgrounds": "^5.1.11",
     "@storybook/addon-info": "^5.1.11",
@@ -43,12 +47,17 @@
     "@testing-library/react": "^9.1.4",
     "@testing-library/react-hooks": "^2.0.1",
     "@types/jest": "^24.0.18",
+    "@types/lingui__core": "^2.7.0",
+    "@types/lingui__macro": "^2.7.3",
+    "@types/lingui__react": "^2.8.0",
     "@types/react": "^16.8.10",
     "@types/react-dom": "^16.8.3",
     "@types/react-helmet": "^5.0.8",
     "@types/react-redux": "^7.1.2",
     "@types/react-select": "^3.0.4",
     "@types/styled-components": "^4.1.12",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-plugin-macros": "^2.6.1",
     "babel-plugin-styled-components": "^1.10.0",
     "git-hooks": "^1.1.10",
     "jest": "^24.9.0",
@@ -69,7 +78,10 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "add-locale": "lingui add-locale",
+    "extract": "lingui extract",
+    "compile": "lingui compile"
   },
   "repository": {
     "type": "git",
