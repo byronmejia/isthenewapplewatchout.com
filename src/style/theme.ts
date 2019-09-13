@@ -11,3 +11,10 @@ export const LightTheme: ThemeRecord = {
     primaryColor: "#1c1c26",
     secondaryColor: "#EF6F6C",
 };
+
+export const DarkTheme: ThemeRecord = {
+    primaryColor: "#ffffff",
+    secondaryColor: "#46B1E9",
+    primaryBackground: "#1c1c26",
+    secondaryBackground: "#EF6F6C",
+};

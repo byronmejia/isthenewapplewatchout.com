@@ -1,8 +1,13 @@
 import { combineReducers, createStore as reduxCreateStore } from "redux";
-import { themeReducer } from "./theme/reducer";
+import { themeReducer as theme } from "./theme/reducer";
+import { ThemeStore } from "./theme/types";
 
-const reducer = combineReducers({
-    theme: themeReducer,
+export interface StateModel {
+    theme: ThemeStore;
+}
+
+const reducer = combineReducers<StateModel>({
+    theme,
 });
 
 export const createStore = () => reduxCreateStore(reducer);
