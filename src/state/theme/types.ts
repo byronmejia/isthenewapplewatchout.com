@@ -1,6 +1,6 @@
 export interface ThemeStore {
-    theme: "dark" | "light";
+    theme: "dark" | "light" | "system";
 }
 export const defaultState: Readonly<ThemeStore> = {
-    theme: "light",
+    theme: "system",
 };
