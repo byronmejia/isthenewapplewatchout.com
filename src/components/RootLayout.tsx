@@ -16,8 +16,10 @@ export const extractTheme = (theme: ThemeStore["theme"]): ThemeRecord => {
         case "light":
             return LightTheme;
         case "system":
-            return window.matchMedia("(prefers-color-scheme: dark)").matches
-                ? DarkTheme
+            return typeof window !== `undefined`
+                ? window.matchMedia("(prefers-color-scheme: dark)").matches
+                    ? DarkTheme
+                    : LightTheme
                 : LightTheme;
     }
 };
