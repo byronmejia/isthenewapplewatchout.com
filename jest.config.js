@@ -8,7 +8,7 @@ module.exports = {
     },
     clearMocks: true,
     coverageDirectory: "coverage",
-    coverageReporters: ["lcov"],
+    coverageReporters: ["lcov", "text"],
     collectCoverageFrom: [
         "**/*.{ts,tsx}",
         "!**/*.spec.{ts,tsx}",
