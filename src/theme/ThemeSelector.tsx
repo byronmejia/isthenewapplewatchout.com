@@ -75,7 +75,7 @@ export const ThemeSelector: FunctionComponent = () => {
     return (
         <StyledThemeSelector
             value={currentThemeOption}
-            onChange={option =>
+            onChange={(option: ThemeOption) =>
                 dispatch({
                     type: THEME_UPDATE,
                     payload: option.value,

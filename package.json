@@ -69,7 +69,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
