@@ -52,6 +52,7 @@ export const StyledThemeSelector = styled(Select)`
 
         .select__option {
             background-color: ${props => props.theme.primaryBackground};
+            cursor: pointer;
             &:hover {
                 background-color: ${props => props.theme.secondaryBackground};
             }
