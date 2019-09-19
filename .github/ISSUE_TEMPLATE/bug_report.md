@@ -30,3 +30,5 @@ If applicable, add screenshots to help explain your problem.
 
 **Additional context**
 Add any other context about the problem here.
+
+**note: Just supplying an image as the bug report is also allowed**
