@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import * as React from "react";
 import { GlobalStyle } from "@style/global";
 import { ThemeProvider } from "styled-components";
-import { DarkTheme, LightTheme, ThemeRecord } from "@style/theme";
+import { DarkTheme, LightTheme, SystemTheme, ThemeRecord } from "@style/theme";
 import { FullPage } from "@components/FullPage";
 import { ThemeSelector } from "../theme/ThemeSelector";
 import { useSelector } from "react-redux";
@@ -16,11 +16,7 @@ export const extractTheme = (theme: ThemeStore["theme"]): ThemeRecord => {
         case "light":
             return LightTheme;
         case "system":
-            return typeof window !== `undefined`
-                ? window.matchMedia("(prefers-color-scheme: dark)").matches
-                    ? DarkTheme
-                    : LightTheme
-                : LightTheme;
+            return SystemTheme;
     }
 };
 

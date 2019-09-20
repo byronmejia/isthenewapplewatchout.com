@@ -18,3 +18,10 @@ export const DarkTheme: ThemeRecord = {
     primaryBackground: "#1c1c26",
     secondaryBackground: "#EF6F6C",
 };
+
+export const SystemTheme: ThemeRecord = {
+    primaryColor: "var(--primary-color)",
+    secondaryColor: "var(--secondary-color)",
+    primaryBackground: "var(--primary-background)",
+    secondaryBackground: "var(--secondary-background)",
+};
