@@ -42,6 +42,13 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
        --primary-color: ${DarkTheme.primaryColor};
        --secondary-color: ${DarkTheme.secondaryColor};
      }
+     
+     @media (prefers-color-scheme: light) {
+       --primary-background: ${LightTheme.primaryBackground};
+       --secondary-background: ${LightTheme.secondaryBackground};
+       --primary-color: ${LightTheme.primaryColor};
+       --secondary-color: ${LightTheme.secondaryColor};
+     }
   }
    
    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
