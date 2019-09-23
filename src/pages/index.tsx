@@ -12,7 +12,11 @@ const IndexPage = () => (
             description="Please, is it out yet? Apple products cures my crippling depression..."
         />
         <Header>Apple Watch Series 5 Status</Header>
-        <Paragraph>Pre Order</Paragraph>
+        <Paragraph>
+            <a href="https://www.apple.com/au/shop/buy-watch/apple-watch">
+                Yes
+            </a>
+        </Paragraph>
     </RootLayout>
 );
 
